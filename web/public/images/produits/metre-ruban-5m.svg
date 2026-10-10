@@ -1,6 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="320" height="240" viewBox="0 0 320 240" role="img" aria-label="Mètre ruban 5 m">
   <rect width="320" height="240" fill="#f0f3f6"/>
-  <rect x="16" y="16" width="288" height="208" rx="12" fill="none" stroke="#0b5cad" stroke-width="4"/>
-  <circle cx="160" cy="100" r="44" fill="#0b5cad" opacity="0.15"/>
-  <text x="160" y="190" font-family="system-ui, sans-serif" font-size="16" fill="#0b5cad" text-anchor="middle">Mètre ruban 5 m</text>
+  <rect x="160" y="144" width="128" height="20" fill="#f7e36b" stroke="#c4b23d" stroke-width="1.5"/>
+  <line x1="166" y1="144" x2="286" y2="144" stroke="#2d3741" stroke-width="7" stroke-dasharray="1.5 6.5"/>
+  <line x1="166" y1="144" x2="286" y2="144" stroke="#2d3741" stroke-width="14" stroke-dasharray="1.5 38.5"/>
+  <text x="206" y="160" font-family="system-ui, sans-serif" font-size="8" fill="#c0392b">1</text>
+  <text x="246" y="160" font-family="system-ui, sans-serif" font-size="8" fill="#c0392b">2</text>
+  <rect x="286" y="138" width="6" height="30" rx="1" fill="#8a96a3"/>
+  <rect x="98" y="50" width="34" height="14" rx="4" fill="#2d3741"/>
+  <rect x="56" y="58" width="116" height="116" rx="28" fill="#f2a900" stroke="#c48a00" stroke-width="2"/>
+  <circle cx="114" cy="116" r="36" fill="#2d3741"/>
+  <circle cx="114" cy="116" r="12" fill="#59636e"/>
+  <rect x="160" y="140" width="14" height="28" rx="3" fill="#2d3741"/>
+  <text x="160" y="218" font-family="system-ui, sans-serif" font-size="15" fill="#1f2a37" text-anchor="middle">Mètre ruban 5 m</text>
 </svg>

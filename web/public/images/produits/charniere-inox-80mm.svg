@@ -1,6 +1,30 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="320" height="240" viewBox="0 0 320 240" role="img" aria-label="Charnière inox 80 mm">
+  <defs>
+    <linearGradient id="inox" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e9edf1"/>
+      <stop offset="0.5" stop-color="#b8c1ca"/>
+      <stop offset="1" stop-color="#dde3e8"/>
+    </linearGradient>
+    <linearGradient id="noeud" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#8a96a3"/>
+      <stop offset="0.5" stop-color="#e9edf1"/>
+      <stop offset="1" stop-color="#8a96a3"/>
+    </linearGradient>
+    <g id="trou">
+      <circle r="8" fill="#9aa5b1"/>
+      <circle r="4.5" fill="#f0f3f6"/>
+    </g>
+  </defs>
   <rect width="320" height="240" fill="#f0f3f6"/>
-  <rect x="16" y="16" width="288" height="208" rx="12" fill="none" stroke="#7a4b00" stroke-width="4"/>
-  <circle cx="160" cy="100" r="44" fill="#7a4b00" opacity="0.15"/>
-  <text x="160" y="190" font-family="system-ui, sans-serif" font-size="16" fill="#7a4b00" text-anchor="middle">Charnière inox 80 mm</text>
+  <rect x="62" y="44" width="96" height="140" rx="6" fill="url(#inox)" stroke="#8a96a3" stroke-width="1.5"/>
+  <rect x="162" y="44" width="96" height="140" rx="6" fill="url(#inox)" stroke="#8a96a3" stroke-width="1.5"/>
+  <rect x="148" y="40" width="24" height="148" rx="8" fill="url(#noeud)" stroke="#6b7785" stroke-width="1.5"/>
+  <path d="M148,89 L172,89 M148,139 L172,139" stroke="#6b7785" stroke-width="2"/>
+  <use href="#trou" transform="translate(108 72)"/>
+  <use href="#trou" transform="translate(108 114)"/>
+  <use href="#trou" transform="translate(108 156)"/>
+  <use href="#trou" transform="translate(212 72)"/>
+  <use href="#trou" transform="translate(212 114)"/>
+  <use href="#trou" transform="translate(212 156)"/>
+  <text x="160" y="218" font-family="system-ui, sans-serif" font-size="15" fill="#1f2a37" text-anchor="middle">Charnière inox 80 mm</text>
 </svg>

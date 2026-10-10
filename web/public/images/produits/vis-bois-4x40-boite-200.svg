@@ -1,6 +1,19 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="320" height="240" viewBox="0 0 320 240" role="img" aria-label="Vis bois 4 x 40 (boîte de 200)">
+  <defs>
+    <g id="vis">
+      <rect x="-14" y="0" width="28" height="9" rx="4" fill="#b8a35a"/>
+      <path d="M-4,4 L4,4 M0,1 L0,7" stroke="#7d6d30" stroke-width="1.5"/>
+      <polygon points="-6,9 6,9 6,84 0,102 -6,84" fill="#d4c27a"/>
+      <path d="M-6,22 L6,17 M-6,32 L6,27 M-6,42 L6,37 M-6,52 L6,47 M-6,62 L6,57 M-6,72 L6,67 M-6,82 L6,77 M-4,92 L4,88" stroke="#9c8a3e" stroke-width="1.5"/>
+    </g>
+  </defs>
   <rect width="320" height="240" fill="#f0f3f6"/>
-  <rect x="16" y="16" width="288" height="208" rx="12" fill="none" stroke="#7a4b00" stroke-width="4"/>
-  <circle cx="160" cy="100" r="44" fill="#7a4b00" opacity="0.15"/>
-  <text x="160" y="190" font-family="system-ui, sans-serif" font-size="16" fill="#7a4b00" text-anchor="middle">Vis bois 4 x 40 (boîte de 200)</text>
+  <polygon points="44,92 184,92 168,62 60,62" fill="#ddb07a" stroke="#9c6a3a" stroke-width="2"/>
+  <rect x="44" y="92" width="140" height="94" fill="#c98b4f" stroke="#9c6a3a" stroke-width="2"/>
+  <rect x="62" y="114" width="104" height="50" rx="4" fill="#ffffff"/>
+  <text x="114" y="136" font-family="system-ui, sans-serif" font-size="16" font-weight="700" fill="#1f2a37" text-anchor="middle">4 × 40</text>
+  <text x="114" y="154" font-family="system-ui, sans-serif" font-size="11" fill="#59636e" text-anchor="middle">200 vis bois</text>
+  <use href="#vis" transform="translate(222 70)"/>
+  <use href="#vis" transform="translate(262 82) rotate(18)"/>
+  <text x="160" y="218" font-family="system-ui, sans-serif" font-size="15" fill="#1f2a37" text-anchor="middle">Vis bois 4 x 40 (boîte de 200)</text>
 </svg>
