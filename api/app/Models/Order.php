@@ -15,6 +15,9 @@ class Order extends Model
         'customer_id',
         'reference',
         'status',
+        'subtotal_cents',
+        'discount_cents',
+        'discount_tier_id',
         'total_cents',
         'placed_at',
         'shipping_address',
@@ -25,6 +28,9 @@ class Order extends Model
     {
         return [
             'placed_at' => 'datetime',
+            'subtotal_cents' => 'integer',
+            'discount_cents' => 'integer',
+            'discount_tier_id' => 'integer',
             'total_cents' => 'integer',
         ];
     }
@@ -58,6 +64,11 @@ class Order extends Model
     public function lines(): HasMany
     {
         return $this->hasMany(OrderLine::class);
+    }
+
+    public function discountTier(): BelongsTo
+    {
+        return $this->belongsTo(DiscountTier::class);
     }
 
     public function discount(): BelongsTo
