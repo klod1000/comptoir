@@ -1,6 +1,20 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="320" height="240" viewBox="0 0 320 240" role="img" aria-label="Stylos bille bleus (lot de 10)">
+  <defs>
+    <g id="stylo">
+      <rect x="20" y="-6" width="140" height="12" rx="5" fill="#f7fafc" stroke="#b9c2cc" stroke-width="1.5"/>
+      <rect x="34" y="-1.5" width="116" height="3" fill="#1f5fbf"/>
+      <polygon points="160,-5 176,0 160,5" fill="#c3ccd5"/>
+      <rect x="0" y="-7" width="42" height="14" rx="4" fill="#1f5fbf"/>
+      <rect x="6" y="-12" width="32" height="4" rx="2" fill="#174a96"/>
+    </g>
+  </defs>
   <rect width="320" height="240" fill="#f0f3f6"/>
-  <rect x="16" y="16" width="288" height="208" rx="12" fill="none" stroke="#8250df" stroke-width="4"/>
-  <circle cx="160" cy="100" r="44" fill="#8250df" opacity="0.15"/>
-  <text x="160" y="190" font-family="system-ui, sans-serif" font-size="16" fill="#8250df" text-anchor="middle">Stylos bille bleus (lot de 10)</text>
+  <use href="#stylo" transform="translate(70 176) rotate(-52)"/>
+  <use href="#stylo" transform="translate(70 176) rotate(-40)"/>
+  <use href="#stylo" transform="translate(70 176) rotate(-28)"/>
+  <use href="#stylo" transform="translate(70 176) rotate(-16)"/>
+  <use href="#stylo" transform="translate(70 176) rotate(-4)"/>
+  <rect x="246" y="150" width="50" height="26" rx="13" fill="#1f5fbf"/>
+  <text x="271" y="168" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle">× 10</text>
+  <text x="160" y="218" font-family="system-ui, sans-serif" font-size="15" fill="#1f2a37" text-anchor="middle">Stylos bille bleus (lot de 10)</text>
 </svg>

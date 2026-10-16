@@ -183,7 +183,7 @@ class DatabaseSeeder extends Seeder
                     $total += $quantity * $product->price_cents;
                 }
 
-                $order->update(['total_cents' => $total]);
+                $order->update(['subtotal_cents' => $total, 'total_cents' => $total]);
                 $number++;
             }
         }

@@ -7,6 +7,7 @@ next-env.d.ts
 *.tsbuildinfo
 
 # variables d'environnement locales
+.env
 .env*.local
 
 # rapports de tests

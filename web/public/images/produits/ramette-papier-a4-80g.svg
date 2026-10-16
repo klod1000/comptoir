@@ -1,6 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="320" height="240" viewBox="0 0 320 240" role="img" aria-label="Ramette papier A4 80 g">
   <rect width="320" height="240" fill="#f0f3f6"/>
-  <rect x="16" y="16" width="288" height="208" rx="12" fill="none" stroke="#8250df" stroke-width="4"/>
-  <circle cx="160" cy="100" r="44" fill="#8250df" opacity="0.15"/>
-  <text x="160" y="190" font-family="system-ui, sans-serif" font-size="16" fill="#8250df" text-anchor="middle">Ramette papier A4 80 g</text>
+  <polygon points="64,92 214,92 260,64 110,64" fill="#ffffff" stroke="#b9c2cc" stroke-width="1.5"/>
+  <polygon points="214,92 260,64 260,148 214,176" fill="#dfe5eb" stroke="#b9c2cc" stroke-width="1.5"/>
+  <rect x="64" y="92" width="150" height="84" fill="#ffffff" stroke="#b9c2cc" stroke-width="1.5"/>
+  <rect x="64" y="110" width="150" height="46" fill="#0b5cad"/>
+  <polygon points="214,110 260,82 260,128 214,156" fill="#084785"/>
+  <text x="139" y="132" font-family="system-ui, sans-serif" font-size="18" font-weight="700" fill="#ffffff" text-anchor="middle">A4 · 80 g</text>
+  <text x="139" y="148" font-family="system-ui, sans-serif" font-size="10" fill="#d6e6f7" text-anchor="middle">500 feuilles</text>
+  <text x="160" y="218" font-family="system-ui, sans-serif" font-size="15" fill="#1f2a37" text-anchor="middle">Ramette papier A4 80 g</text>
 </svg>

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Api\DiscountTierController;
 use App\Http\Controllers\Api\OrderController;
 use App\Http\Controllers\Api\ProductController;
 use App\Http\Controllers\Api\ProfileController;
@@ -11,6 +12,9 @@ Route::get('/products/{product:slug}', [ProductController::class, 'show'])->name
 
 Route::get('/orders', [OrderController::class, 'index'])->name('orders.index');
 Route::post('/orders', [OrderController::class, 'store'])->name('orders.store');
+
+Route::get('/discount-tiers', [DiscountTierController::class, 'index'])->name('discount-tiers.index');
+Route::post('/discount-tiers', [DiscountTierController::class, 'store'])->name('discount-tiers.store');
 
 Route::post('/register', [RegisterController::class, 'store'])->name('register');
 

@@ -10,6 +10,8 @@ use Illuminate\Validation\ValidationException;
 
 class OrderService
 {
+    public function __construct(private readonly DiscountTierService $discountTiers) {}
+
     /**
      * Enregistre une commande (client existant ou invité) et décrémente le stock.
      *
@@ -42,7 +44,7 @@ class OrderService
                 'discount_code' => $data['discount_code'] ?? null,
             ]);
 
-            $total = 0;
+            $subtotal = 0;
 
             foreach ($data['lines'] as $line) {
                 $product = $products[$line['product_id']];
@@ -55,10 +57,18 @@ class OrderService
 
                 $product->decrement('stock', $line['quantity']);
 
-                $total += $line['quantity'] * $product->price_cents;
+                $subtotal += $line['quantity'] * $product->price_cents;
             }
 
-            $order->update(['total_cents' => $total]);
+            $tier = $this->discountTiers->applicableTier($subtotal);
+            $discount = $tier !== null ? $this->discountTiers->discountCents($subtotal, $tier) : 0;
+
+            $order->update([
+                'subtotal_cents' => $subtotal,
+                'discount_cents' => $discount,
+                'discount_tier_id' => $tier?->id,
+                'total_cents' => $subtotal - $discount,
+            ]);
 
             return $order;
         });
